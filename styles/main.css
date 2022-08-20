@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;500;700&display=swap');
 
 :root {
   --mainTextColor: #000;
@@ -34,4 +34,57 @@ a {
 
 li {
   line-height: 1.9em;
+  list-style: none;
+}
+
+#container--main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section--page {
+  padding: 1em 0;
+}
+
+#wrapper--hero {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+#user-name {
+  font-size: 3em;
+  line-height: 1em;
+}
+#bio,
+a {
+  font-weight: 300;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#email {
+  color: var(--mainTextColor);
+}
+
+#socials--list {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+
+#socials--list a {
+  font-size: 0.9em;
+  color: var(--secondaryTextColor);
+  transition: 0.3s;
+}
+
+#socials--list a:hover {
+  color: var(--mainLinkColor);
 }
