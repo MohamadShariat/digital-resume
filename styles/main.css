@@ -13,11 +13,11 @@
   --mainBorderColor-dark: #2b3031;
   --mainBgColor-dark: #131415;
 
-  --mainTextColor: var(--mainTextColor-light);
-  --secondaryTextColor: var(--secondaryTextColor-light);
-  --mainLinkColor: var(--mainLinkColor-light);
-  --mainBorderColor: var(--mainBorderColor-light);
-  --mainBgColor: var(--mainBgColor-light);
+  --mainTextColor: var(--mainTextColor-dark);
+  --secondaryTextColor: var(--secondaryTextColor-dark);
+  --mainLinkColor: var(--mainLinkColor-dark);
+  --mainBorderColor: var(--mainBorderColor-dark);
+  --mainBgColor: var(--mainBgColor-dark);
 }
 
 * {
@@ -123,4 +123,31 @@ a {
 .line-break {
   background-color: var(--mainBorderColor);
   height: 1px;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+  #wrapper--hero {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  #user-name {
+    font-size: 2em;
+  }
+
+  .section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .card--work-history {
+    border-left: none;
+    padding-left: 0;
+  }
 }
